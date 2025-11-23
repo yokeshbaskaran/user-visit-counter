@@ -7,7 +7,7 @@
 ## 🚀 Features
 
 - Real-time visitor counter
-- Auto-increments visit count on each page load
+- Auto-increments the visit count on each page load
 
 ## 📅 Description
 
@@ -31,9 +31,9 @@ cd user-visit-counter
 npm install
 
 # Start the development server
-npm start
+npm run dev
 ```
 
 ## 📸 Preview
 
-(Add screenshot or demo link if available)
+![Image](https://github.com/user-attachments/assets/a654ba0e-bbf9-46a8-9fd9-636085909176)
