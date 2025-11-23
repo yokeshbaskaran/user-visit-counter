@@ -5,16 +5,21 @@ const App = () => {
   const [visitors, setVisitors] = useState(null);
 
   //API Endpoint
-  const API_URL =
-    "https://m8k4ijx2z7.execute-api.ap-south-1.amazonaws.com/count";
+  const API_URL = import.meta.env.VITE_APP_API_URL;
+  // console.log("API URL:", API_URL);
 
   function handleData(val = null) {
     const data = val?.value ?? 0;
-    console.log("DB Data", val.value);
+    // console.log("DB Data", val.value);
     setVisitors(data);
   }
 
   useEffect(() => {
+    if (!API_URL) {
+      console.error("API_URL is missing");
+      return;
+    }
+
     // Example: calling your API (replace with your real endpoint)
     fetch(API_URL)
       .then((res) => res.json())
