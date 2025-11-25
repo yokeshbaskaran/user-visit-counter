@@ -17,6 +17,7 @@ It can be connected to a backend, database, or API to store and update the visit
 ## 🛠️ Technologies Used
 
 - React
+- HTML, CSS & JavaScript
 
 ## 📂 Project Setup
 
